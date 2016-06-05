@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SVG Work</title>
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+</head>
+
+<body>
+    <h2>Basic Graphics in SVG</h2>
+    <svg width="500px" height="500px">
+        <!-- <circle r="50px" cx="100px" cy="100px" class="myCircle" />
+		<rect x="250px" y ="100px" class="myRect" />
+
+		<text x="250px" y="200px" text-anchor="end">Some Text Here!</text> -->
+        <!-- text-anchor="end" need to understand more about it -->
+        <!-- <line x1="10px" y1="10px" x2="100px" y2="100px" class="myLine"></line>-->
+        <!-- <g class="myCircles">
+            <circle cx="10px" cy="10px" r="6"></circle>
+            <circle cx="20px" cy="20px" r="6"></circle>
+            <circle cx="30px" cy="30px" r="6"></circle>
+            <circle cx="40px" cy="40px" r="6"></circle>
+            <circle cx="50px" cy="50px" r="6"></circle>
+            <circle cx="60px" cy="60px" r="6"></circle>
+        </g> -->
+        <!-- Check the Drawing Order -->
+        <!-- <circle cx="120px" cy="120px" r="20px" fill="#292929"></circle>
+        <circle cx="100px" cy="100px" r="20px" fill="#2266FF"></circle> -->
+        <!--  Transform Attribute -->
+        <g class="transformCircles" transform="translate(50,50) scale(2)">
+            <circle cx="10px" cy="10px" r="6"></circle>
+            <circle cx="20px" cy="20px" r="6"></circle>
+            <circle cx="30px" cy="30px" r="6"></circle>
+        </g>
+        <g class="transformCircles" transform="translate(100,100) rotate(75)">
+            <circle cx="10px" cy="10px" r="6"></circle>
+            <circle cx="20px" cy="20px" r="6"></circle>
+            <circle cx="30px" cy="30px" r="6"></circle>
+        </g>
+        <g class="transformCircles" transform="translate(150,150) rotate(270)">
+            <circle cx="10px" cy="10px" r="6"></circle>
+            <circle cx="20px" cy="20px" r="6"></circle>
+            <circle cx="30px" cy="30px" r="6"></circle>
+        </g>
+    </svg>
+</body>
+
+</html>
